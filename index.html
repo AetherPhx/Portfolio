@@ -9,21 +9,223 @@
 
 	<body>
 		<div class="layout">
-			<header class="header"></header>
+			<!-- TODO: Implementar Fn de mostrar/ocultar el menú mediante el click de la hamburguesa -->
+			<header class="header">
+				<nav class="nav">
+					<div class="nav__btn">
+						<i class="nav__icon fa-solid fa-bars"></i>
+					</div>
+
+					<ul class="nav__menu">
+						<li class="nav__item">
+							<a href="#" class="nav__link"> < Perfil /></a>
+						</li>
+
+						<li class="nav__item">
+							<a href="#" class="nav__link"> < Proyectos /></a>
+						</li>
+
+						<li class="nav__item">
+							<a href="#" class="nav__link"> < Experiencia /></a>
+						</li>
+
+						<li class="nav__item">
+							<a href="#" class="nav__link"> < Formación /></a>
+						</li>
+
+						<li class="nav__item">
+							<a href="#" class="nav__link"> < Contacto /></a>
+						</li>
+					</ul>
+				</nav>
+			</header>
 
 			<main class="main">
-				<section id="profile" class="profile"></section>
+				<section id="profile" class="profile">
+					<header class="profile__header">
+						<h1 class="profile__name">
+							Luis Vicente <span class="profile__aka">'Aether'</span>
+						</h1>
+						<span class="profile__title">Desarrollador Frontend</span>
 
-				<section id="projects" class="projects"></section>
+						<div class="profile__network">
+							<i class="profile__network-icon fa-brands fa-github"></i>
+							<i class="profile__network-icon fa-brands fa-linkedin"></i>
+						</div>
+					</header>
 
-				<section id="experience" class="experience"></section>
+					<div class="profile__quoute">
+						<p class="quoute__text">
+							"La verdadera nobleza está en ser superior a tu yo anterior"
+						</p>
+					</div>
 
-				<section id="education" class="education"></section>
+					<div class="profile__desc">
+						<p class="profile__p">
+							Soy un joven autodidacta apasionado de la tecnología, del
+							aprendizaje y de la creación innovadora.
+						</p>
+						<p class="profile__p">
+							Me hace sentir pleno profundizar en mis conocimientos y pulir mis
+							habilidades mediante experimentos o proyectos prácticos.
+						</p>
+						<p class="profile__p">
+							Lo que puedo ofrecer es todo mi set de habilidades para generar
+							soluciones mediante el uso de la tecnología.
+						</p>
+						<p class="profile__p">
+							De manera autodidacta siempre busco practicar y profundizar mis
+							habilidades y conocimientos.
+						</p>
+					</div>
+				</section>
 
-				<section id="contact" class="contact"></section>
+				<section id="projects" class="projects">
+					<h2 class="projects__title">Mis Proyectos</h2>
+					<p class="projects__desc">
+						Páginas y Apps Web que desarrollé en mi tiempo libre aplicando las
+						tecnologías que he aprendido; mejorando mis habilidades y
+						profundizando mis conocimientos.
+					</p>
+
+					<section class="projects__deck">
+						<article class="projects__card">
+							<!-- ! This is Only a Temporal Template-->
+							<img src="" alt="Preview del Proyecto" />
+							<div class="projects__card-info">
+								<header>
+									<h3 class="projects__card-title">Nombre del Proyecto</h3>
+
+									<div class="projects__card-actions">
+										<a href="" class="projects__card-btn">Ver Proyecto</a>
+										<a href="" class="projects__card-btn">Ver Código</a>
+									</div>
+								</header>
+
+								<p class="projects__card-desc">
+									<!-- Descripción del Proyecto -->
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Necessitatibus ipsa id sit suscipit quam reprehenderit,
+									aliquam atque rerum tenetur aspernatur commodi nihil esse quo
+									accusamus, tempora et distinctio quisquam. Provident?
+								</p>
+							</div>
+						</article>
+					</section>
+				</section>
+
+				<section id="experience" class="exp">
+					<h2 class="exp__title">Experiencia Laboral</h2>
+					<p class="exp__desc">
+						He tenido la oportunidad de trabajar en proyectos de desarrollo y de
+						creación de software para empresas que conseguí como clientes
+						freelance.
+					</p>
+
+					<section class="exp__deck">
+						<article class="exp__card">
+							<!-- ! This is Only a Temporal Template-->
+							<header class="exp__card-header">
+								<h3 class="exp__card-title">
+									Front End Developer
+									<span class="exp__card-acc">| Freelance</span>
+								</h3>
+								<span class="exp__date">2024</span>
+							</header>
+
+							<div class="exp__card-details">
+								<div class="exp__card-client">
+									<span class="exp__card-name">Nombre del Cliente</span>
+									<img class="exp__card-logo" src="" alt="Logo del Cliente" />
+								</div>
+
+								<div class="exp__card-desc">
+									<p">
+										Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+										Doloremque officiis praesentium odit atque, in aliquid alias
+										repudiandae molestiae quae explicabo corporis corrupti
+										provident, ipsam delectus magnam maiores exercitationem ad
+										perspiciatis.
+									</p>
+									<p">
+										Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+										Ipsum, nam placeat assumenda debitis iure repellat. Sint,
+										similique quia? Est cum nesciunt quis maxime tenetur impedit
+										quo dolorum qui quisquam eveniet!
+									</p>
+								</div>
+							</div>
+						</article>
+					</section>
+				</section>
+
+                <section id="skills" class="skills">
+                    <h2 class="skills__title">Mis Skills</h2>
+                    <p class="skills__desc">
+                        Lista de las tecnologías, metodologías, y lenguajes que domino y tengo experiencia aplicando y desarrollando con ellas.
+                    </p>
+
+                    <section class="skills__deck">
+                        <article class="skills__card">
+                            <!-- ! This is Only a Temporal Template-->
+                            <img class="skills__card-logo" src="" alt="Logo de la Skill">
+                            <h3 class="skills__card-title">Nombre de la Skill</h3>
+                        </article>
+                    </section>
+                </section>
+
+				<section id="formation" class="formation">
+                    <h2 class="formation__title">Mi Formación</h2>
+                    <p>Mis estudios, cursos y certificaciones que avalan mis conocimientos y son muestra del tiempo dedicado a aprender y dominar el set de habilidades que poseo actualmente.</p>
+
+                    <section class="formation__deck">
+                        <article class="formation__card">
+                            <!-- ! This is Only a Temporal Template-->
+                            <img class="formation__card-logo" src="" alt="Logo">
+                            <h3 class="formation__card-title">Título de la Formación</h3>
+                            <span class="formation__card-date">Fecha</span>
+                            <p class="formation__card-desc">Descripción de la Formación</p>
+                        </article>
+                    </section>
+                </section>
+
+				<section id="contact" class="contact">
+                    <h2 class="contact__title">Contacta Conmigo</h2>
+                    
+                    <form action="" class="contact__form">
+                        <fieldset class="contact__form-fieldset">
+                            <legend class="contact__form-legend">¡Mándame un mensaje!</legend>
+
+                            <div class="contact__form-data">
+                                <input class="contact__form-input" type="text" name="name" id="name" placeholder="Nombre">
+                                <input class="contact__form-input" type="mail" name="mail" id="mail" placeholder="Correo">
+                                <input class="contact__form-input" type="tel" name="phone" id="phone" placeholder="Número Telefónico">
+                            </div>
+                            
+                            <textarea class="contact__form-mssg" name="mssg" id="mssg" placeholder="Déjame un mensaje"></textarea>
+                        </fieldset>
+                            
+                        <button class="contact__btn">Enviar</button>
+                    </form>
+
+                    <section class="contact__social">
+                        <h3 class="contact__social-title">Mis Redes</h3>
+
+                        <div class="contact__social-networks">
+                            <a href="" class="contact__social-link">
+                                <i class="contact__social-icon fa-brands fa-github"></i>
+                            </a>
+                            <a href="" class="contact__social-link">
+                                <i class="contact__social-icon fa-brands fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </section>
+                </section>
 			</main>
 
-			<footer class="footer"></footer>
+			<footer class="footer">
+                <span class="footer__copyright">Developed by Aether</span>
+            </footer>
 		</div>
 
 		<script
