@@ -9,7 +9,6 @@
 
 	<body>
 		<div class="layout">
-			<!-- TODO: Implementar Fn de mostrar/ocultar el menú mediante el click de la hamburguesa -->
 			<header class="header">
 				<nav class="nav">
 					<div class="nav__btn">
@@ -18,23 +17,27 @@
 
 					<ul class="nav__menu">
 						<li class="nav__item">
-							<a href="#" class="nav__link"> < Perfil /></a>
+							<a href="#profile" class="nav__link"> < Perfil /></a>
 						</li>
 
 						<li class="nav__item">
-							<a href="#" class="nav__link"> < Proyectos /></a>
+							<a href="#projects" class="nav__link"> < Proyectos /></a>
 						</li>
 
 						<li class="nav__item">
-							<a href="#" class="nav__link"> < Experiencia /></a>
+							<a href="#experience" class="nav__link"> < Experiencia /></a>
 						</li>
 
 						<li class="nav__item">
-							<a href="#" class="nav__link"> < Formación /></a>
+							<a href="#skills" class="nav__link"> < Habilidades /></a>
 						</li>
 
 						<li class="nav__item">
-							<a href="#" class="nav__link"> < Contacto /></a>
+							<a href="#formation" class="nav__link"> < Formación /></a>
+						</li>
+
+						<li class="nav__item">
+							<a href="#contact" class="nav__link"> < Contacto /></a>
 						</li>
 					</ul>
 				</nav>
@@ -43,14 +46,29 @@
 			<main class="main">
 				<section id="profile" class="profile">
 					<header class="profile__header">
-						<h1 class="profile__name">
-							Luis Vicente <span class="profile__aka">'Aether'</span>
+						<h1 class="profile__title">
+							<span class="profile__name">Luis Vicente</span>
+							<span class="profile__aka">'Aether'</span>
+							<span class="profile__profession">- Front End Developer</span>
 						</h1>
-						<span class="profile__title">Desarrollador Frontend</span>
 
 						<div class="profile__network">
-							<i class="profile__network-icon fa-brands fa-github"></i>
-							<i class="profile__network-icon fa-brands fa-linkedin"></i>
+							<!-- TODO: Complete the mail -->
+							<a
+								class="profile__network-link"
+								href="https://github.com/AetherLuis"
+							>
+								<i class="profile__network-icon fa-brands fa-github"></i>
+							</a>
+							<a
+								class="profile__network-link"
+								href="https://www.linkedin.com/in/luis-vicente-9b453a1b6/"
+							>
+								<i class="profile__network-icon fa-brands fa-linkedin"></i>
+							</a>
+							<a class="profile__network-link" href="mailto:">
+								<i class="profile__network-icon fa-solid fa-envelope"></i>
+							</a>
 						</div>
 					</header>
 
@@ -81,17 +99,20 @@
 				</section>
 
 				<section id="projects" class="projects">
-					<h2 class="projects__title">Mis Proyectos</h2>
-					<p class="projects__desc">
-						Páginas y Apps Web que desarrollé en mi tiempo libre aplicando las
-						tecnologías que he aprendido; mejorando mis habilidades y
-						profundizando mis conocimientos.
-					</p>
+					<header class="projects__header">
+						<h2 class="projects__title">Mis Proyectos</h2>
+						<p class="projects__desc">
+							Páginas y Apps Web que desarrollé en mi tiempo libre aplicando las
+							tecnologías que he aprendido; mejorando mis habilidades y
+							profundizando mis conocimientos.
+						</p>
+					</header>
 
 					<section class="projects__deck">
 						<article class="projects__card">
 							<!-- ! This is Only a Temporal Template-->
 							<img src="" alt="Preview del Proyecto" />
+
 							<div class="projects__card-info">
 								<header>
 									<h3 class="projects__card-title">Nombre del Proyecto</h3>
@@ -115,30 +136,30 @@
 				</section>
 
 				<section id="experience" class="exp">
-					<h2 class="exp__title">Experiencia Laboral</h2>
-					<p class="exp__desc">
-						He tenido la oportunidad de trabajar en proyectos de desarrollo y de
-						creación de software para empresas que conseguí como clientes
-						freelance.
-					</p>
+					<header class="exp__header">
+						<h2 class="exp__title">Experiencia Laboral</h2>
+						<div class="exp__desc">
+							<p>
+								He tenido la oportunidad de trabajar como independiente donde
+								pude obtener experiencia en los servicios relacionados a la
+								creación de sitios web, gestión de hosting, dominio y correo
+								profesional.
+							</p>
+							<p>
+								Actualmente estoy buscando un puesto como desarrollador donde
+								pueda aprender y adentrarme en este mundo de la programación.
+							</p>
+						</div>
+					</header>
 
 					<section class="exp__deck">
 						<article class="exp__card">
-							<!-- ! This is Only a Temporal Template-->
 							<header class="exp__card-header">
-								<h3 class="exp__card-title">
-									Front End Developer
-									<span class="exp__card-acc">| Freelance</span>
-								</h3>
-								<span class="exp__date">2024</span>
+								<h3 class="exp__card-title">Freelance - Front End Developer</h3>
+								<span class="exp__date">Dic 2023 - Actualmente</span>
 							</header>
 
 							<div class="exp__card-details">
-								<div class="exp__card-client">
-									<span class="exp__card-name">Nombre del Cliente</span>
-									<img class="exp__card-logo" src="" alt="Logo del Cliente" />
-								</div>
-
 								<div class="exp__card-desc">
 									<p>
 										Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -160,11 +181,13 @@
 				</section>
 
 				<section id="skills" class="skills">
-					<h2 class="skills__title">Mis Skills</h2>
-					<p class="skills__desc">
-						Lista de las tecnologías, metodologías, y lenguajes que domino y
-						tengo experiencia aplicando y desarrollando con ellas.
-					</p>
+					<header class="skills__header">
+						<h2 class="skills__title">Mis Skills</h2>
+						<p class="skills__desc">
+							Lista de las tecnologías, metodologías, y lenguajes que domino y
+							tengo experiencia aplicando y desarrollando con ellas.
+						</p>
+					</header>
 
 					<section class="skills__deck">
 						<article class="skills__card">
@@ -176,12 +199,14 @@
 				</section>
 
 				<section id="formation" class="formation">
-					<h2 class="formation__title">Mi Formación</h2>
-					<p>
-						Mis estudios, cursos y certificaciones que avalan mis conocimientos
-						y son muestra del tiempo dedicado a aprender y dominar el set de
-						habilidades que poseo actualmente.
-					</p>
+					<header class="formation__header">
+						<h2 class="formation__title">Mi Formación</h2>
+						<p class="formation__desc">
+							Mis estudios, cursos y certificaciones que avalan mis
+							conocimientos y son muestra del tiempo dedicado a aprender y
+							dominar el set de habilidades que poseo actualmente.
+						</p>
+					</header>
 
 					<section class="formation__deck">
 						<article class="formation__card">
@@ -229,7 +254,7 @@
 								class="contact__form-mssg"
 								name="mssg"
 								id="mssg"
-								placeholder="Déjame un mensaje"
+								placeholder="Escribe tu mensaje 😉"
 							></textarea>
 						</fieldset>
 
@@ -240,11 +265,20 @@
 						<h3 class="contact__social-title">Mis Redes</h3>
 
 						<div class="contact__social-networks">
-							<a href="" class="contact__social-link">
+							<a
+								class="contact__social-link"
+								href="https://github.com/AetherLuis"
+							>
 								<i class="contact__social-icon fa-brands fa-github"></i>
 							</a>
-							<a href="" class="contact__social-link">
+							<a
+								class="contact__social-link"
+								href="https://www.linkedin.com/in/luis-vicente-9b453a1b6/"
+							>
 								<i class="contact__social-icon fa-brands fa-linkedin"></i>
+							</a>
+							<a class="contact__social-link" href="mailto:">
+								<i class="contact__social-icon fa-solid fa-envelope"></i>
 							</a>
 						</div>
 					</section>
