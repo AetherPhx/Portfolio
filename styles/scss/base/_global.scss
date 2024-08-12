@@ -1,0 +1,53 @@
+// Estilos generales para elementos comunes de la web que puedan variar
+
+body {
+	// background-color: ;
+
+	font-family: sans-serif;
+	line-height: 1.5;
+	// font-size: ;
+	// font-weight: ;
+	// color: ;
+}
+
+h1,
+h2,
+h3 {
+	line-height: 1.2;
+	// font-size: ;
+	// font-weight: ;
+	text-wrap: balance;
+	// color: ;
+}
+
+p {
+	max-width: 70ch;
+	line-height: 1.5;
+	// font-size: ;
+	// font-weight: ;
+	text-wrap: pretty;
+	// color: ;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+input,
+textarea {
+	&::placeholder {
+		color: inherit;
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
+
+button {
+	&:hover {
+		cursor: pointer;
+	}
+}
