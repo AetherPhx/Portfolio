@@ -94,4 +94,9 @@ button:hover {
   display: none;
   position: fixed;
   top: 0;
+}
+
+.main {
+  display: grid;
+  gap: 1.5rem;
 }/*# sourceMappingURL=styles.css.map */

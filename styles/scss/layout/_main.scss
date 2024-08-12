@@ -1,0 +1,6 @@
+@use "../theme/spacing" as space;
+
+.main {
+	display: grid;
+	gap: space.$space-lg;
+}
