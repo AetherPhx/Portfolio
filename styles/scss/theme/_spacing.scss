@@ -1,0 +1,10 @@
+// Variables relacionadas a los espacios
+@use "../util/functions" as fn;
+
+$space-xxs: fn.pxToRem(4);
+$space-xs: fn.pxToRem(8);
+$space-sm: fn.pxToRem(12);
+$space-md: fn.pxToRem(16);
+$space-lg: fn.pxToRem(24);
+$space-xl: fn.pxToRem(32);
+$space-xxl: fn.pxToRem(48);

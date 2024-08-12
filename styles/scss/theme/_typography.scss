@@ -1,0 +1,13 @@
+// Variables relacionadas al texto y tipografía
+@use "../util/functions" as fn;
+
+$fm-primary: "Inter";
+
+$fz-small: fn.pxToRem(12);
+$fz-regular: fn.pxToRem(16);
+$fz-medium: fn.pxToRem(20);
+$fz-big: fn.pxToRem(24);
+
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 700;

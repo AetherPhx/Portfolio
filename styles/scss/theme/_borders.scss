@@ -1,0 +1,14 @@
+// Estilos de Bordes
+
+@use "../util/functions" as fn;
+
+// Ancho
+$bw-sm: 1px;
+$bw-md: 2px;
+$bw-lg: 4px;
+
+// Redondez
+$br-sm: fn.pxToRem(4);
+$br-md: fn.pxToRem(8);
+$br-lg: fn.pxToRem(16);
+$br-full: 50%;
