@@ -1,32 +1,40 @@
 // Estilos generales para elementos comunes de la web que puedan variar
 
-body {
-	// background-color: ;
+// Importaciones de variables
+@use "../theme/typography" as typo;
+@use "../theme/color-palete" as color;
+@use "../theme/spacing" as space;
+@use "../theme/borders" as border;
 
-	font-family: sans-serif;
+body {
+	background-color: color.$bg;
+
+	font-family: typo.$fm, sans-serif;
 	line-height: 1.5;
-	// font-size: ;
-	// font-weight: ;
-	// color: ;
+	font-size: typo.$fz-regular;
+	font-weight: typo.$fw-regular;
+	color: color.$text;
 }
 
 h1,
 h2,
 h3 {
 	line-height: 1.2;
-	// font-size: ;
-	// font-weight: ;
+	font-size: typo.$fz-big;
+	font-weight: typo.$fw-medium;
 	text-wrap: balance;
-	// color: ;
+	color: color.$text;
 }
 
 p {
 	max-width: 70ch;
+	margin: space.$space-xs 0;
+
 	line-height: 1.5;
-	// font-size: ;
-	// font-weight: ;
+	font-size: typo.$fz-regular;
+	font-weight: typo.$fw-regular;
 	text-wrap: pretty;
-	// color: ;
+	color: color.$text;
 }
 
 img {
@@ -47,6 +55,11 @@ textarea {
 }
 
 button {
+	font-family: inherit;
+	font-size: typo.$fz-regular;
+	font-weight: typo.$fw-medium;
+	color: inherit;
+
 	&:hover {
 		cursor: pointer;
 	}

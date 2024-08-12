@@ -1,7 +1,7 @@
 // Variables relacionadas al texto y tipografía
 @use "../util/functions" as fn;
 
-$fm-primary: "Inter";
+$fm: "Inter";
 
 $fz-small: fn.pxToRem(12);
 $fz-regular: fn.pxToRem(16);
