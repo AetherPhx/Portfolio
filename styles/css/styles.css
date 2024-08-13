@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 html {
   font-size: 100%;
   scroll-behavior: smooth;
@@ -131,4 +132,5 @@ button:hover {
 .profile__quoute {
   font-style: italic;
   text-align: center;
+  font-weight: 500;
 }/*# sourceMappingURL=styles.css.map */
