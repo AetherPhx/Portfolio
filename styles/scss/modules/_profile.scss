@@ -2,14 +2,19 @@
 @use "../theme/spacing" as space;
 
 .profile {
-	display: flex;
-	flex-direction: column;
+	display: grid;
 	gap: space.$space-md;
 
 	&__header {
 		display: flex;
 		flex-direction: column;
 		gap: space.$space-md;
+	}
+	&__pic {
+		overflow: hidden;
+		&-img {
+			border-radius: 50%;
+		}
 	}
 	&__title {
 		font-weight: typo.$fw-bold;

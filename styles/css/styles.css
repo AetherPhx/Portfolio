@@ -103,14 +103,19 @@ button:hover {
 }
 
 .profile {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 1rem;
 }
 .profile__header {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+.profile__pic {
+  overflow: hidden;
+}
+.profile__pic-img {
+  border-radius: 50%;
 }
 .profile__title {
   font-weight: 700;
