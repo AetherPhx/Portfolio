@@ -1,0 +1,38 @@
+@use "../theme/typography" as typo;
+@use "../theme/spacing" as space;
+
+.profile {
+	display: flex;
+	flex-direction: column;
+	gap: space.$space-md;
+
+	&__header {
+		display: flex;
+		flex-direction: column;
+		gap: space.$space-md;
+	}
+	&__title {
+		font-weight: typo.$fw-bold;
+		text-align: center;
+	}
+	&__aka {
+		font-style: italic;
+	}
+
+	&__network {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-evenly;
+		align-items: center;
+		gap: space.$space-md;
+
+		&-icon {
+			font-size: typo.$fs-medium;
+		}
+	}
+
+	&__quoute {
+		font-style: italic;
+		text-align: center;
+	}
+}
