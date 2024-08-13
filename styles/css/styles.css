@@ -129,8 +129,23 @@ button:hover {
 .profile__network-icon {
   font-size: 1.25rem;
 }
-.profile__quoute {
+.profile__quote {
   font-style: italic;
   text-align: center;
   font-weight: 500;
+}
+
+.projects {
+  display: grid;
+  gap: 1rem;
+}
+.projects__card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.projects__card-actions {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
 }/*# sourceMappingURL=styles.css.map */
