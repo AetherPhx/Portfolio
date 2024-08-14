@@ -4,15 +4,17 @@
 	display: grid;
 	gap: space.$space-md;
 
-	&__card-header {
-		display: flex;
-		flex-direction: column;
-		gap: space.$space-xs;
-	}
+	&__card {
+		&-header {
+			display: flex;
+			flex-direction: column;
+			gap: space.$space-xs;
+		}
 
-	&__card-actions {
-		display: flex;
-		flex-direction: row;
-		gap: space.$space-xs;
+		&-actions {
+			display: flex;
+			flex-direction: row;
+			gap: space.$space-xs;
+		}
 	}
 }
