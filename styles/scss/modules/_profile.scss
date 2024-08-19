@@ -2,9 +2,6 @@
 @use "../theme/spacing" as space;
 
 .profile {
-	display: grid;
-	gap: space.$space-lg;
-
 	&__header {
 		display: flex;
 		flex-direction: column;

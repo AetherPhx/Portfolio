@@ -3,9 +3,6 @@
 @use "../theme/borders" as border;
 
 .projects {
-	display: grid;
-	gap: space.$space-lg;
-
 	&__deck {
 		display: grid;
 		gap: space.$space-md;

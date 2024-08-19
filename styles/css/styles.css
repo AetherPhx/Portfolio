@@ -40,7 +40,6 @@ body {
 h1,
 h2,
 h3 {
-  padding-top: 30px;
   line-height: 1.2;
   font-size: 1.5rem;
   font-weight: 500;
@@ -52,7 +51,6 @@ h1 {
 }
 
 h3 {
-  padding-top: 0;
   font-size: 1.25rem;
 }
 
@@ -92,6 +90,12 @@ button:hover {
   cursor: pointer;
 }
 
+.mainModule {
+  padding-top: 2rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
 .layout {
   width: min(100% - 40px, 56rem);
   margin-inline: auto;
@@ -108,10 +112,6 @@ button:hover {
   gap: 2rem;
 }
 
-.profile {
-  display: grid;
-  gap: 1.5rem;
-}
 .profile__header {
   display: flex;
   flex-direction: column;
@@ -145,10 +145,6 @@ button:hover {
   font-weight: 500;
 }
 
-.projects {
-  display: grid;
-  gap: 1.5rem;
-}
 .projects__deck {
   display: grid;
   gap: 1rem;

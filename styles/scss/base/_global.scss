@@ -19,7 +19,6 @@ body {
 h1,
 h2,
 h3 {
-	padding-top: 30px;
 	line-height: 1.2;
 	font-size: typo.$fs-big;
 	font-weight: typo.$fw-medium;
@@ -30,7 +29,6 @@ h1 {
 }
 
 h3 {
-	padding-top: 0;
 	font-size: typo.$fs-medium;
 }
 
@@ -70,4 +68,10 @@ button {
 	&:hover {
 		cursor: pointer;
 	}
+}
+
+.mainModule {
+	padding-top: space.$space-xl;
+	display: grid;
+	gap: space.$space-lg;
 }
