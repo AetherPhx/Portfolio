@@ -1,1 +1,28 @@
 // Bloques de estilos reutilizables
+
+@use "../theme/color-palette" as color;
+@use "../theme/spacing" as space;
+@use "../theme/borders" as border;
+
+@mixin card() {
+	border: border.$bw-md solid color.$text;
+	border-radius: border.$br-md;
+	display: grid;
+	gap: space.$space-md;
+	overflow: hidden;
+
+	&-header {
+		background-color: color.$main;
+		padding-block: space.$space-sm;
+		color: color.$bg;
+
+		display: grid;
+		gap: space.$space-xs;
+		justify-content: center;
+		text-align: center;
+	}
+
+	&-details {
+		padding-inline: space.$space-md;
+	}
+}

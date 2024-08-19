@@ -1,6 +1,7 @@
 @use "../theme/color-palette" as color;
 @use "../theme/spacing" as space;
 @use "../theme/borders" as border;
+@use "../util/mixins" as mxn;
 
 .projects {
 	&__deck {
@@ -8,32 +9,13 @@
 		gap: space.$space-md;
 	}
 	&__card {
-		border: border.$bw-md solid color.$text;
-		border-radius: border.$br-md;
-		display: grid;
-		gap: space.$space-md;
-		overflow: hidden;
-
-		&-header {
-			background-color: color.$main;
-			padding-block: space.$space-sm;
-			color: color.$bg;
-
-			display: grid;
-			gap: space.$space-xs;
-			justify-content: center;
-			text-align: center;
-		}
+		@include mxn.card();
 		&-actions {
 			display: flex;
 			flex-direction: row;
 			justify-content: space-evenly;
-			// gap: space.$space-xs;
 		}
 
-		&-details {
-			padding-inline: space.$space-md;
-		}
 		// &-preview
 		// &-info
 	}

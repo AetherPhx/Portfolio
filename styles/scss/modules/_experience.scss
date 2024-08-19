@@ -1,0 +1,15 @@
+@use "../theme/color-palette" as color;
+@use "../theme/spacing" as space;
+@use "../theme/borders" as border;
+@use "../util/mixins" as mxn;
+
+.exp {
+	&__deck {
+		display: grid;
+		gap: space.$space-md;
+	}
+
+	&__card {
+		@include mxn.card();
+	}
+}

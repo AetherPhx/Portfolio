@@ -165,11 +165,35 @@ button:hover {
   justify-content: center;
   text-align: center;
 }
+.projects__card-details {
+  padding-inline: 1rem;
+}
 .projects__card-actions {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
-.projects__card-details {
+
+.exp__deck {
+  display: grid;
+  gap: 1rem;
+}
+.exp__card {
+  border: 2px solid #0d47a1;
+  border-radius: 0.5rem;
+  display: grid;
+  gap: 1rem;
+  overflow: hidden;
+}
+.exp__card-header {
+  background-color: #0d47a1;
+  padding-block: 0.75rem;
+  color: #e3f2fd;
+  display: grid;
+  gap: 0.5rem;
+  justify-content: center;
+  text-align: center;
+}
+.exp__card-details {
   padding-inline: 1rem;
 }/*# sourceMappingURL=styles.css.map */
