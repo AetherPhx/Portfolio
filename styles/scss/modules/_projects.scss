@@ -10,12 +10,31 @@
 	&__card {
 		border: border.$bw-md solid color.$text;
 		border-radius: border.$br-md;
-		padding: space.$space-md;
+		display: grid;
+		gap: space.$space-md;
+		overflow: hidden;
 
+		&-header {
+			background-color: color.$main;
+			padding-block: space.$space-sm;
+			color: color.$bg;
+
+			display: grid;
+			gap: space.$space-xs;
+			justify-content: center;
+			text-align: center;
+		}
 		&-actions {
 			display: flex;
 			flex-direction: row;
-			gap: space.$space-xs;
+			justify-content: space-evenly;
+			// gap: space.$space-xs;
 		}
+
+		&-details {
+			padding-inline: space.$space-md;
+		}
+		// &-preview
+		// &-info
 	}
 }
