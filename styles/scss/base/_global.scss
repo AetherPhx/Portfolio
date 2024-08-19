@@ -23,7 +23,13 @@ h3 {
 	font-size: typo.$fs-big;
 	font-weight: typo.$fw-medium;
 	text-wrap: balance;
-	color: color.$text;
+}
+h1 {
+	font-weight: typo.$fw-bold;
+}
+
+h3 {
+	font-size: typo.$fs-medium;
 }
 
 p {
@@ -34,7 +40,6 @@ p {
 	font-size: typo.$fs-regular;
 	font-weight: typo.$fw-regular;
 	text-wrap: pretty;
-	color: color.$text;
 }
 
 img {
@@ -45,9 +50,9 @@ img {
 
 input,
 textarea {
-	&::placeholder {
-		color: inherit;
-	}
+	font-family: inherit;
+	font-size: typo.$fs-regular;
+	color: inherit;
 
 	&:focus {
 		outline: none;

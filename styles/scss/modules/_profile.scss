@@ -3,7 +3,7 @@
 
 .profile {
 	display: grid;
-	gap: space.$space-md;
+	gap: space.$space-lg;
 
 	&__header {
 		display: flex;
@@ -29,14 +29,13 @@
 		flex-flow: row nowrap;
 		justify-content: space-evenly;
 		align-items: center;
-		gap: space.$space-md;
 
 		&-icon {
-			font-size: typo.$fs-medium;
+			font-size: typo.$fs-big;
 		}
 	}
 
-	&__quote {
+	&__quote p {
 		font-style: italic;
 		text-align: center;
 		font-weight: typo.$fw-medium;

@@ -44,7 +44,14 @@ h3 {
   font-size: 1.5rem;
   font-weight: 500;
   text-wrap: balance;
-  color: #0d47a1;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.25rem;
 }
 
 p {
@@ -54,7 +61,6 @@ p {
   font-size: 1rem;
   font-weight: 400;
   text-wrap: pretty;
-  color: #0d47a1;
 }
 
 img {
@@ -63,12 +69,10 @@ img {
   height: auto;
 }
 
-input::-moz-placeholder, textarea::-moz-placeholder {
-  color: inherit;
-}
-
-input::placeholder,
-textarea::placeholder {
+input,
+textarea {
+  font-family: inherit;
+  font-size: 1rem;
   color: inherit;
 }
 input:focus,
@@ -99,12 +103,12 @@ button:hover {
 
 .main {
   display: grid;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .profile {
   display: grid;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 .profile__header {
   display: flex;
@@ -129,12 +133,11 @@ button:hover {
   flex-flow: row nowrap;
   justify-content: space-evenly;
   align-items: center;
-  gap: 1rem;
 }
 .profile__network-icon {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
-.profile__quote {
+.profile__quote p {
   font-style: italic;
   text-align: center;
   font-weight: 500;
@@ -142,12 +145,16 @@ button:hover {
 
 .projects {
   display: grid;
+  gap: 1.5rem;
+}
+.projects__deck {
+  display: grid;
   gap: 1rem;
 }
-.projects__card-header {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+.projects__card {
+  border: 2px solid #0d47a1;
+  border-radius: 0.5rem;
+  padding: 1rem;
 }
 .projects__card-actions {
   display: flex;

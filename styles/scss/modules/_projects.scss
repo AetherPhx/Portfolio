@@ -1,15 +1,19 @@
+@use "../theme/color-palette" as color;
 @use "../theme/spacing" as space;
+@use "../theme/borders" as border;
 
 .projects {
 	display: grid;
-	gap: space.$space-md;
+	gap: space.$space-lg;
 
+	&__deck {
+		display: grid;
+		gap: space.$space-md;
+	}
 	&__card {
-		&-header {
-			display: flex;
-			flex-direction: column;
-			gap: space.$space-xs;
-		}
+		border: border.$bw-md solid color.$text;
+		border-radius: border.$br-md;
+		padding: space.$space-md;
 
 		&-actions {
 			display: flex;
