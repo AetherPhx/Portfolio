@@ -1,5 +1,6 @@
 @use "../theme/typography" as typo;
 @use "../theme/spacing" as space;
+@use "../theme/borders" as border;
 
 .profile {
 	&__header {
@@ -7,12 +8,7 @@
 		flex-direction: column;
 		gap: space.$space-md;
 	}
-	&__pic {
-		overflow: hidden;
-		&-img {
-			border-radius: 50%;
-		}
-	}
+
 	&__title {
 		font-weight: typo.$fw-bold;
 		text-align: center;
@@ -20,12 +16,17 @@
 	&__aka {
 		font-style: italic;
 	}
-
+	&__pic {
+		overflow: hidden;
+		&-img {
+			border-radius: border.$br-full;
+		}
+	}
 	&__network {
+		padding: space.$space-md;
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: space-evenly;
-		align-items: center;
 
 		&-icon {
 			font-size: typo.$fs-big;
