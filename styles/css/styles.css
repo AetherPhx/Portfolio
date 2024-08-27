@@ -196,4 +196,19 @@ button:hover {
 }
 .exp__card-details {
   padding-inline: 1rem;
+}
+
+.skills__deck {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.skills__card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+.skills__card-logo {
+  width: 3rem;
 }/*# sourceMappingURL=styles.css.map */

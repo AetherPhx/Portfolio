@@ -1,0 +1,21 @@
+@use "../util/functions" as fn;
+@use "../theme/spacing" as space;
+
+.skills {
+	&__deck {
+		display: flex;
+		flex-direction: column;
+		gap: space.$space-xs;
+	}
+
+	&__card {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: space.$space-xs;
+
+		&-logo {
+			width: fn.pxToRem(48);
+		}
+	}
+}
