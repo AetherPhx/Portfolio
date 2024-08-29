@@ -1,0 +1,5 @@
+@use "../theme/spacing" as space;
+.footer {
+	margin-top: space.$space-xxl;
+	text-align: center;
+}

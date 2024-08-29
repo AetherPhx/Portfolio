@@ -102,14 +102,37 @@ button:hover {
 }
 
 .header {
-  display: none;
+  background-color: #e3f2fd;
+  width: min(100% - 40px, 56rem);
   position: fixed;
   top: 0;
+}
+
+.nav__btn {
+  font-size: 1.5rem;
+}
+.nav__menu {
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.nav__menu--hidden {
+  display: none;
+}
+.nav__link {
+  font-weight: 700;
 }
 
 .main {
   display: grid;
   gap: 2rem;
+}
+
+.footer {
+  margin-top: 3rem;
+  text-align: center;
 }
 
 .profile__header {
@@ -211,4 +234,82 @@ button:hover {
 }
 .skills__card-logo {
   width: 3rem;
+}
+
+.formation__deck {
+  display: grid;
+  gap: 1rem;
+}
+.formation__card {
+  border: 2px solid #0d47a1;
+  border-radius: 0.5rem;
+  display: grid;
+  gap: 1rem;
+  overflow: hidden;
+}
+.formation__card-header {
+  background-color: #0d47a1;
+  padding-block: 0.75rem;
+  color: #e3f2fd;
+  display: grid;
+  gap: 0.5rem;
+  justify-content: center;
+  text-align: center;
+}
+.formation__card-details {
+  padding-inline: 1rem;
+}
+
+.contact__title {
+  text-align: center;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+.contact__form-fieldset {
+  padding: 1rem;
+  border: 2px solid #0d47a1;
+  border-radius: 0.5rem;
+}
+.contact__form-legend {
+  margin-inline: auto;
+  font-weight: 700;
+}
+.contact__form-data {
+  margin-bottom: 0.5rem;
+  display: grid;
+  gap: 0.5rem;
+}
+.contact__form input,
+.contact__form textarea {
+  background-color: #e3f2fd;
+  padding: 0.25rem;
+  border: 2px solid #0d47a1;
+  border-radius: 0.25rem;
+}
+.contact__form-btn {
+  background-color: #0d47a1;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: #e3f2fd;
+}
+.contact__social {
+  text-align: center;
+}
+.contact__social-title {
+  margin-bottom: 1rem;
+}
+.contact__social-networks {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+.contact__social-icon {
+  font-size: 1.5rem;
 }/*# sourceMappingURL=styles.css.map */

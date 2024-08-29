@@ -1,0 +1,13 @@
+@use "../theme/spacing" as space;
+@use "../util/mixins" as mxn;
+
+.formation {
+	&__deck {
+		display: grid;
+		gap: space.$space-md;
+	}
+
+	&__card {
+		@include mxn.card();
+	}
+}

@@ -1,5 +1,33 @@
+@use "../theme/color-palette" as color;
+@use "../theme/typography" as typo;
+@use "../theme/spacing" as space;
+@use "../theme/borders" as border;
+
 .header {
-	display: none; // ! Temporarily disabled
+	background-color: color.$bg;
+	width: min(calc(100% - 40px), 56rem);
+
 	position: fixed;
 	top: 0;
+}
+
+.nav {
+	&__btn {
+		font-size: typo.$fs-big;
+	}
+
+	&__menu {
+		padding-bottom: space.$space-md;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: space.$space-md;
+	}
+	&__menu--hidden {
+		display: none;
+	}
+
+	&__link {
+		font-weight: typo.$fw-bold;
+	}
 }

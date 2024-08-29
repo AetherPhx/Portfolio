@@ -15,7 +15,7 @@
 						<i class="nav__icon fa-solid fa-bars"></i>
 					</div>
 
-					<ul class="nav__menu">
+					<ul class="nav__menu nav__menu--hidden">
 						<li class="nav__item">
 							<a href="#profile" class="nav__link"> < Perfil /></a>
 						</li>
@@ -290,10 +290,17 @@
 					<section class="formation__deck">
 						<article class="formation__card">
 							<!-- ! This is Only a Temporal Template-->
-							<img class="formation__card-logo" src="" alt="Logo" />
-							<h3 class="formation__card-title">Título de la Formación</h3>
-							<span class="formation__card-date">Fecha</span>
-							<p class="formation__card-desc">Descripción de la Formación</p>
+							<header class="formation__card-header">
+								<img class="formation__card-logo" src="" alt="Logo" />
+								<h3 class="formation__card-title">Título de la Formación</h3>
+								<span class="formation__card-date">Fecha</span>
+							</header>
+
+							<div class="formation__card-details">
+								<div class="formation__card-desc">
+									<p>Descripción de la Formación</p>
+								</div>
+							</div>
 						</article>
 					</section>
 				</section>
@@ -337,7 +344,7 @@
 							></textarea>
 						</fieldset>
 
-						<button class="contact__btn">Enviar</button>
+						<button class="contact__form-btn">Enviar</button>
 					</form>
 
 					<section class="contact__social">

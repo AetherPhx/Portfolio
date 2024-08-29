@@ -1,0 +1,66 @@
+@use "../theme/color-palette" as color;
+@use "../theme/typography" as typo;
+@use "../theme/spacing" as space;
+@use "../theme/borders" as border;
+
+.contact {
+	&__title {
+		text-align: center;
+	}
+
+	// Formulario
+	&__form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: space.$space-sm;
+
+		&-fieldset {
+			padding: space.$space-md;
+			border: border.$bw-md solid color.$text;
+			border-radius: border.$br-md;
+		}
+		&-legend {
+			margin-inline: auto;
+			font-weight: typo.$fw-bold;
+		}
+		&-data {
+			margin-bottom: space.$space-xs;
+			display: grid;
+			gap: space.$space-xs;
+		}
+		input,
+		textarea {
+			background-color: color.$bg;
+			padding: space.$space-xxs;
+			border: border.$bw-md solid color.$text;
+			border-radius: border.$br-sm;
+		}
+
+		&-btn {
+			background-color: color.$main;
+			padding: space.$space-xs space.$space-md;
+			border: none;
+			border-radius: border.$br-md;
+			color: color.$bg;
+		}
+	}
+
+	// Redes Sociales
+	&__social {
+		text-align: center;
+		&-title {
+			margin-bottom: space.$space-md;
+		}
+		&-networks {
+			display: flex;
+			flex-flow: row nowrap;
+			align-items: center;
+			justify-content: center;
+			gap: space.$space-sm;
+		}
+		&-icon {
+			font-size: typo.$fs-big;
+		}
+	}
+}
