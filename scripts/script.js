@@ -2,7 +2,6 @@ const prepareNavMenu = () => {
 	const nav = document.querySelector(".nav");
 
 	nav.addEventListener("click", (event) => {
-		console.log(`Se presionó el ${event.target.className}`);
 		event.target.matches(".nav__btn, .nav__icon, .nav__item, .nav__link")
 			? toogleNavMenu()
 			: null;
