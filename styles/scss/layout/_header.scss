@@ -11,13 +11,18 @@
 }
 
 .nav {
+	padding-inline: space.$space-xs;
+	border-bottom: border.$bw-md solid color.$text;
+	box-shadow: 0 0 space.$space-xxs 0 color.$text;
+
 	&__btn {
 		width: fit-content;
 		font-size: typo.$fs-big;
 	}
 
 	&__menu {
-		padding-bottom: space.$space-md;
+		background-color: color.$bg;
+		padding-block: space.$space-md;
 
 		display: flex;
 		flex-direction: column;

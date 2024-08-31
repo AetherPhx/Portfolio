@@ -107,13 +107,19 @@ button:hover {
   top: 0;
 }
 
+.nav {
+  padding-inline: 0.5rem;
+  border-bottom: 2px solid #0d47a1;
+  box-shadow: 0 0 0.25rem 0 #0d47a1;
+}
 .nav__btn {
   width: -moz-fit-content;
   width: fit-content;
   font-size: 1.5rem;
 }
 .nav__menu {
-  padding-bottom: 1rem;
+  background-color: #e3f2fd;
+  padding-block: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
