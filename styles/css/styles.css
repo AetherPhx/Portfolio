@@ -91,9 +91,9 @@ button:hover {
 }
 
 .mainModule {
-  padding-top: 2rem;
   display: grid;
   gap: 1.5rem;
+  scroll-margin-top: 3rem;
 }
 
 .layout {
@@ -103,8 +103,7 @@ button:hover {
 
 .header {
   background-color: #e3f2fd;
-  width: min(100% - 40px, 56rem);
-  position: fixed;
+  position: sticky;
   top: 0;
 }
 

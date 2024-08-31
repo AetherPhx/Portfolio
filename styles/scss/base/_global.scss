@@ -71,7 +71,7 @@ button {
 }
 
 .mainModule {
-	padding-top: space.$space-xl;
 	display: grid;
 	gap: space.$space-lg;
+	scroll-margin-top: space.$space-xxl;
 }
