@@ -1,4 +1,5 @@
 @use "../theme/spacing" as space;
+@use "../util/functions" as fn;
 @use "../util/mixins" as mxn;
 
 .formation {
@@ -9,5 +10,11 @@
 
 	&__card {
 		@include mxn.card();
+
+		&-header {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 }

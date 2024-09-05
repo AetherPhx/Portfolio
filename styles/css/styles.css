@@ -293,6 +293,11 @@ button:hover {
 .formation__card-details {
   padding-inline: 1rem;
 }
+.formation__card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .contact__title {
   text-align: center;
