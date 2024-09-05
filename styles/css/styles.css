@@ -152,10 +152,12 @@ button:hover {
 .profile__header {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
 }
 .profile__pic {
   overflow: hidden;
+  width: 9.375rem;
 }
 .profile__pic-img {
   border-radius: 50%;

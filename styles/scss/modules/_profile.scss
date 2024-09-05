@@ -2,6 +2,7 @@
 @use "../theme/color-palette" as color;
 @use "../theme/spacing" as space;
 @use "../theme/borders" as border;
+@use "../util/functions" as fn;
 
 .profile {
 	padding-block: space.$space-md;
@@ -10,10 +11,12 @@
 	&__header {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 		gap: space.$space-md;
 	}
 	&__pic {
 		overflow: hidden;
+		width: fn.pxToRem(150);
 		&-img {
 			border-radius: border.$br-full;
 		}
