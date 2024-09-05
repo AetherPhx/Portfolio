@@ -1,20 +1,16 @@
 @use "../theme/typography" as typo;
+@use "../theme/color-palette" as color;
 @use "../theme/spacing" as space;
 @use "../theme/borders" as border;
 
 .profile {
+	padding-block: space.$space-md;
+	gap: space.$space-sm;
+
 	&__header {
 		display: flex;
 		flex-direction: column;
 		gap: space.$space-md;
-	}
-
-	&__title {
-		font-weight: typo.$fw-bold;
-		text-align: center;
-	}
-	&__aka {
-		font-style: italic;
 	}
 	&__pic {
 		overflow: hidden;
@@ -22,8 +18,25 @@
 			border-radius: border.$br-full;
 		}
 	}
+	&__info {
+		display: flex;
+		flex-direction: column;
+		gap: space.$space-md;
+	}
+	&__title {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		gap: space.$space-xxs;
+	}
+	&__name {
+		font-size: typo.$fs-huge;
+	}
+	&__profession {
+		font-size: typo.$fs-medium;
+		font-style: italic;
+	}
 	&__network {
-		padding: space.$space-md;
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: space-evenly;
@@ -33,9 +46,14 @@
 		}
 	}
 
-	&__quote p {
+	&__quote {
 		font-style: italic;
 		text-align: center;
-		font-weight: typo.$fw-medium;
+		& p {
+			font-weight: typo.$fw-medium;
+		}
 	}
+
+	// &__desc {
+	// }
 }

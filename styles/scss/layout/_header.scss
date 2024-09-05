@@ -19,6 +19,9 @@
 		width: fit-content;
 		font-size: typo.$fs-big;
 	}
+	&__icon {
+		aspect-ratio: 1 / 1;
+	}
 
 	&__menu {
 		background-color: color.$bg;
