@@ -1,6 +1,7 @@
 @use "../theme/spacing" as space;
 
 .main {
+	margin-top: space.$space-xxl;
 	display: grid;
 	gap: space.$space-xl;
 }

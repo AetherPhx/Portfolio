@@ -103,7 +103,9 @@ button:hover {
 
 .header {
   background-color: #e3f2fd;
-  position: sticky;
+  width: min(100% - 40px, 56rem);
+  margin-inline: auto;
+  position: fixed;
   top: 0;
 }
 
@@ -136,6 +138,7 @@ button:hover {
 }
 
 .main {
+  margin-top: 3rem;
   display: grid;
   gap: 2rem;
 }

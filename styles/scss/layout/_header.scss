@@ -5,8 +5,10 @@
 
 .header {
 	background-color: color.$bg;
+	width: min(calc(100% - 40px), 56rem);
+	margin-inline: auto;
 
-	position: sticky;
+	position: fixed;
 	top: 0;
 }
 
