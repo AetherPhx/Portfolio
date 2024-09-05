@@ -253,18 +253,21 @@ button:hover {
 }
 
 .skills__deck {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  background-color: #0d47a1;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.75rem;
 }
 .skills__card {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  gap: 0.5rem;
+  justify-content: center;
+  cursor: pointer;
 }
 .skills__card-logo {
-  width: 3rem;
+  width: 2.5rem;
 }
 
 .formation__deck {

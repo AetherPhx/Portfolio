@@ -1,21 +1,35 @@
 @use "../util/functions" as fn;
+@use "../theme/color-palette" as color;
 @use "../theme/spacing" as space;
+@use "../theme/borders" as border;
 
 .skills {
 	&__deck {
-		display: flex;
-		flex-direction: column;
-		gap: space.$space-xs;
+		background-color: color.$text;
+		padding: space.$space-md;
+		border-radius: border.$br-lg;
+
+		// display: flex;
+		// flex-flow: row wrap;
+		// justify-content: center;
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		gap: space.$space-sm;
 	}
 
 	&__card {
+		// background-color: color.$text;
+		// padding: space.$space-xxs space.$space-md;
+		// border-radius: border.$br-lg;
+
 		display: flex;
 		flex-direction: row;
-		align-items: center;
-		gap: space.$space-xs;
+		justify-content: center;
+
+		cursor: pointer;
 
 		&-logo {
-			width: fn.pxToRem(48);
+			width: fn.pxToRem(40);
 		}
 	}
 }
