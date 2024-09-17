@@ -2,6 +2,7 @@
 @use "../theme/spacing" as space;
 @use "../theme/borders" as border;
 @use "../util/mixins" as mxn;
+@use "../layout/breakpoints" as breakpoint;
 
 .projects {
 	&__deck {
@@ -16,7 +17,10 @@
 			justify-content: space-evenly;
 		}
 
-		// &-preview
-		// &-info
+		&-preview img {
+			aspect-ratio: 1 / 1;
+			border: border.$bw-lg solid color.$text;
+			border-radius: border.$br-md;
+		}
 	}
 }
