@@ -11,20 +11,5 @@
 
 	&__card {
 		@include mxn.card();
-
-		&-header {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-
-			@include breakpoint.breakpoint("small") {
-				padding-block: 0;
-				padding-inline: space.$space-lg;
-			}
-		}
-
-		@include breakpoint.breakpoint("small") {
-			grid-template-columns: 1fr auto;
-		}
 	}
 }

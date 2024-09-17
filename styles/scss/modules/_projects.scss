@@ -11,6 +11,7 @@
 	}
 	&__card {
 		@include mxn.card();
+
 		&-actions {
 			display: flex;
 			flex-direction: row;

@@ -3,6 +3,7 @@
 @use "../theme/color-palette" as color;
 @use "../theme/spacing" as space;
 @use "../theme/borders" as border;
+@use "../layout/breakpoints" as breakpoint;
 
 @mixin card() {
 	border: border.$bw-md solid color.$text;
@@ -10,19 +11,30 @@
 	display: grid;
 	gap: space.$space-md;
 	overflow: hidden;
+	@include breakpoint.breakpoint("small") {
+		grid-template-columns: 1fr auto;
+	}
 
 	&-header {
 		background-color: color.$main;
 		padding-block: space.$space-sm;
 		color: color.$bg;
 
-		display: grid;
-		gap: space.$space-xs;
+		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		text-align: center;
+		gap: space.$space-xs;
+
+		@include breakpoint.breakpoint("small") {
+			width: 250px;
+		}
 	}
 
 	&-details {
 		padding-inline: space.$space-md;
+		@include breakpoint.breakpoint("small") {
+			padding-block: space.$space-md;
+		}
 	}
 }
