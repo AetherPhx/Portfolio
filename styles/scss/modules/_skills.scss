@@ -1,5 +1,6 @@
 @use "../util/functions" as fn;
 @use "../theme/color-palette" as color;
+@use "../theme/typography" as typo;
 @use "../theme/spacing" as space;
 @use "../theme/borders" as border;
 @use "../layout/breakpoints" as breakpoint;
@@ -17,9 +18,19 @@
 	}
 
 	&__card {
-		width: fn.pxToRem(40);
-
+		display: grid;
+		place-items: center;
+		gap: space.$space-xxs;
 		cursor: pointer;
+
+		&-logo {
+			width: fn.pxToRem(40);
+		}
+
+		&-name {
+			font-size: typo.$fs-small;
+			color: color.$bg;
+		}
 	}
 
 	@include breakpoint.breakpoint("small") {
@@ -30,12 +41,12 @@
 			display: grid;
 			grid-template-columns: repeat(6, 1fr);
 			place-items: center;
-			gap: space.$space-sm;
+			gap: space.$space-lg;
 		}
 		&__card {
-			width: fn.pxToRem(60);
-			display: grid;
-			place-items: center;
+			&-logo {
+				width: fn.pxToRem(60);
+			}
 		}
 	}
 }

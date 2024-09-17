@@ -323,8 +323,17 @@ button:hover {
   gap: 0.5rem;
 }
 .skills__card {
-  width: 2.5rem;
+  display: grid;
+  place-items: center;
+  gap: 0.25rem;
   cursor: pointer;
+}
+.skills__card-logo {
+  width: 2.5rem;
+}
+.skills__card-name {
+  font-size: 0.75rem;
+  color: #e3f2fd;
 }
 @media (min-width: 700px) {
   .skills__deck {
@@ -334,12 +343,10 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     place-items: center;
-    gap: 0.75rem;
+    gap: 1.5rem;
   }
-  .skills__card {
+  .skills__card-logo {
     width: 3.75rem;
-    display: grid;
-    place-items: center;
   }
 }
 
