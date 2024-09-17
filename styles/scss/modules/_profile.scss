@@ -3,6 +3,7 @@
 @use "../theme/spacing" as space;
 @use "../theme/borders" as border;
 @use "../util/functions" as fn;
+@use "../layout/breakpoints" as breakpoint;
 
 .profile {
 	padding-block: space.$space-md;

@@ -1,7 +1,12 @@
 @use "../theme/spacing" as space;
+@use "../layout/breakpoints" as breakpoint;
 
 .main {
 	margin-top: space.$space-xxl;
 	display: grid;
 	gap: space.$space-xl;
+
+	@include breakpoint.breakpoint("small") {
+		margin-top: space.$space-xxxl;
+	}
 }

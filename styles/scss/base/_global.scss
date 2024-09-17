@@ -5,6 +5,7 @@
 @use "../theme/color-palette" as color;
 @use "../theme/spacing" as space;
 @use "../theme/borders" as border;
+@use "../layout/breakpoints" as breakpoint;
 
 body {
 	background-color: color.$bg;
@@ -14,6 +15,10 @@ body {
 	font-size: typo.$fs-regular;
 	font-weight: typo.$fw-regular;
 	color: color.$text;
+
+	@include breakpoint.breakpoint("small") {
+		font-size: typo.$fs-dsk-regular;
+	}
 }
 
 h1,
@@ -23,13 +28,19 @@ h3 {
 	font-size: typo.$fs-big;
 	font-weight: typo.$fw-medium;
 	text-wrap: balance;
+
+	@include breakpoint.breakpoint("small") {
+		font-size: typo.$fs-dsk-big;
+	}
 }
 h1 {
 	font-weight: typo.$fw-bold;
 }
-
 h3 {
 	font-size: typo.$fs-medium;
+	@include breakpoint.breakpoint("small") {
+		font-size: typo.$fs-dsk-medium;
+	}
 }
 
 p {
@@ -39,6 +50,10 @@ p {
 	font-size: typo.$fs-regular;
 	font-weight: typo.$fw-regular;
 	text-wrap: pretty;
+
+	@include breakpoint.breakpoint("small") {
+		font-size: typo.$fs-dsk-regular;
+	}
 }
 
 img {
@@ -73,4 +88,8 @@ button {
 	display: grid;
 	gap: space.$space-lg;
 	scroll-margin-top: space.$space-xxl;
+
+	@include breakpoint.breakpoint("small") {
+		scroll-margin-top: space.$space-xxxl;
+	}
 }

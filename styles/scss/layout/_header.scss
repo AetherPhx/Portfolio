@@ -2,6 +2,7 @@
 @use "../theme/typography" as typo;
 @use "../theme/spacing" as space;
 @use "../theme/borders" as border;
+@use "../layout/breakpoints" as breakpoint;
 
 .header {
 	background-color: color.$bg;
@@ -33,12 +34,27 @@
 		flex-direction: column;
 		align-items: center;
 		gap: space.$space-md;
-	}
-	&__menu--hidden {
-		display: none;
+
+		&--hidden {
+			display: none;
+		}
 	}
 
 	&__link {
 		font-weight: typo.$fw-bold;
+	}
+
+	@include breakpoint.breakpoint("small") {
+		&__btn {
+			display: none;
+		}
+
+		&__menu {
+			flex-direction: row;
+			justify-content: space-evenly;
+			&--hidden {
+				display: flex;
+			}
+		}
 	}
 }

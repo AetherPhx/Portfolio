@@ -1,5 +1,6 @@
 // Variables relacionadas al texto y tipografía
 @use "../util/functions" as fn;
+@use "../layout/breakpoints" as breakpoint;
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 $fm: "Inter";
@@ -13,3 +14,7 @@ $fs-huge: fn.pxToRem(32);
 $fw-regular: 400;
 $fw-medium: 500;
 $fw-bold: 700;
+
+$fs-dsk-regular: fn.pxToRem(18);
+$fs-dsk-medium: fn.pxToRem(24);
+$fs-dsk-big: fn.pxToRem(28);
