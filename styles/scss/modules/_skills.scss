@@ -9,27 +9,15 @@
 		padding: space.$space-md;
 		border-radius: border.$br-lg;
 
-		// display: flex;
-		// flex-flow: row wrap;
-		// justify-content: center;
-		display: grid;
-		grid-template-columns: repeat(5, 1fr);
-		gap: space.$space-sm;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+		gap: space.$space-xs;
 	}
 
 	&__card {
-		// background-color: color.$text;
-		// padding: space.$space-xxs space.$space-md;
-		// border-radius: border.$br-lg;
-
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
+		width: fn.pxToRem(40);
 
 		cursor: pointer;
-
-		&-logo {
-			width: fn.pxToRem(40);
-		}
 	}
 }
