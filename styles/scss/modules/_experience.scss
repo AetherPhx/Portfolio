@@ -2,6 +2,7 @@
 @use "../theme/spacing" as space;
 @use "../theme/borders" as border;
 @use "../util/mixins" as mxn;
+@use "../layout/breakpoints" as breakpoint;
 
 .exp {
 	&__deck {
@@ -11,5 +12,16 @@
 
 	&__card {
 		@include mxn.card();
+
+		&-header {
+			@include breakpoint.breakpoint("small") {
+				padding-block: 0;
+				padding-inline: space.$space-lg;
+				place-items: center;
+			}
+		}
+		@include breakpoint.breakpoint("small") {
+			grid-template-columns: 1fr auto;
+		}
 	}
 }

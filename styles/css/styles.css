@@ -300,6 +300,18 @@ button:hover {
 .exp__card-details {
   padding-inline: 1rem;
 }
+@media (min-width: 700px) {
+  .exp__card-header {
+    padding-block: 0;
+    padding-inline: 1.5rem;
+    place-items: center;
+  }
+}
+@media (min-width: 700px) {
+  .exp__card {
+    grid-template-columns: 1fr auto;
+  }
+}
 
 .skills__deck {
   background-color: #0d47a1;
@@ -358,6 +370,17 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (min-width: 700px) {
+  .formation__card-header {
+    padding-block: 0;
+    padding-inline: 1.5rem;
+  }
+}
+@media (min-width: 700px) {
+  .formation__card {
+    grid-template-columns: 1fr auto;
+  }
 }
 
 .contact__title {
