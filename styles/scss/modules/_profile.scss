@@ -13,7 +13,13 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: space.$space-md;
+		gap: space.$space-xl;
+		text-align: center;
+
+		@include breakpoint.breakpoint("small") {
+			flex-direction: row;
+			text-align: start;
+		}
 	}
 	&__pic {
 		overflow: hidden;
@@ -25,10 +31,8 @@
 	&__info {
 		display: flex;
 		flex-direction: column;
-		gap: space.$space-md;
 	}
 	&__title {
-		text-align: center;
 		display: flex;
 		flex-direction: column;
 		gap: space.$space-xxs;
@@ -42,8 +46,13 @@
 	}
 	&__network {
 		display: flex;
+		justify-content: center;
 		flex-flow: row nowrap;
-		justify-content: space-evenly;
+		gap: space.$space-md;
+
+		@include breakpoint.breakpoint("small") {
+			justify-content: flex-start;
+		}
 
 		&-icon {
 			font-size: typo.$fs-big;
@@ -52,7 +61,6 @@
 
 	&__quote {
 		font-style: italic;
-		text-align: center;
 		& p {
 			font-weight: typo.$fw-medium;
 		}
