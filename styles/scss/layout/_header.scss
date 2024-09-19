@@ -5,56 +5,64 @@
 @use "../layout/breakpoints" as breakpoint;
 
 .header {
-	background-color: color.$bg;
-	width: min(calc(100% - 40px), 56rem);
-	margin-inline: auto;
+	background-color: color.$main;
+	width: 100%;
+	border-bottom: border.$bw-md solid color.$text;
 
 	position: fixed;
 	top: 0;
+	left: 0;
 }
 
 .nav {
-	padding-inline: space.$space-xs;
-	border-bottom: border.$bw-md solid color.$text;
-	box-shadow: 0 0 space.$space-xxs 0 color.$text;
+	width: min(calc(100% - 40px), 56rem);
+	margin-inline: auto;
 
 	&__btn {
 		width: fit-content;
 		font-size: typo.$fs-big;
+		@include breakpoint.breakpoint("small") {
+			display: none;
+		}
 	}
 	&__icon {
 		aspect-ratio: 1 / 1;
+		color: color.$bg;
 	}
 
 	&__menu {
-		background-color: color.$bg;
 		padding-block: space.$space-md;
 
 		display: flex;
 		flex-direction: column;
+		justify-content: flex-start;
 		align-items: center;
 		gap: space.$space-md;
 
 		&--hidden {
 			display: none;
+			@include breakpoint.breakpoint("small") {
+				display: flex;
+			}
+		}
+
+		@include breakpoint.breakpoint("small") {
+			flex-direction: row;
+			justify-content: space-between;
 		}
 	}
 
 	&__link {
 		font-weight: typo.$fw-bold;
-	}
 
-	@include breakpoint.breakpoint("small") {
-		&__btn {
-			display: none;
+		&:visited,
+		&:active {
+			color: color.$bg;
 		}
 
-		&__menu {
-			flex-direction: row;
-			justify-content: space-evenly;
-			&--hidden {
-				display: flex;
-			}
+		animation: color 3s ease-in-out;
+		&:hover {
+			color: color.$acc;
 		}
 	}
 }
