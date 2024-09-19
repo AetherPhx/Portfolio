@@ -1,6 +1,22 @@
 @use "../theme/spacing" as space;
+@use "../theme/typography" as typo;
+
 .footer {
-	display: grid;
+	padding-bottom: space.$space-sm;
 	margin-top: space.$space-xxl;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: space.$space-md;
+
 	text-align: center;
+
+	&__social {
+		display: flex;
+		gap: space.$space-md;
+
+		&-icon {
+			font-size: typo.$fs-medium;
+		}
+	}
 }

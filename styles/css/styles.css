@@ -200,9 +200,20 @@ button:hover {
 }
 
 .footer {
-  display: grid;
+  padding-bottom: 0.75rem;
   margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
   text-align: center;
+}
+.footer__social {
+  display: flex;
+  gap: 1rem;
+}
+.footer__social-icon {
+  font-size: 1.25rem;
 }
 
 .profile {
@@ -441,6 +452,11 @@ button:hover {
   border: 2px solid #0d47a1;
   border-radius: 0.5rem;
 }
+@media (min-width: 700px) {
+  .contact__form-fieldset {
+    width: 100%;
+  }
+}
 .contact__form-legend {
   margin-inline: auto;
   font-weight: 700;
@@ -459,24 +475,10 @@ button:hover {
 }
 .contact__form-btn {
   background-color: #0d47a1;
+  color: #e3f2fd;
+  width: 150px;
+  height: 50px;
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 0.5rem;
-  color: #e3f2fd;
-}
-.contact__social {
-  text-align: center;
-}
-.contact__social-title {
-  margin-bottom: 1rem;
-}
-.contact__social-networks {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
-}
-.contact__social-icon {
-  font-size: 1.5rem;
 }/*# sourceMappingURL=styles.css.map */

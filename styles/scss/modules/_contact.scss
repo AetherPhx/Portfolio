@@ -2,6 +2,7 @@
 @use "../theme/typography" as typo;
 @use "../theme/spacing" as space;
 @use "../theme/borders" as border;
+@use "../layout/breakpoints" as breakpoint;
 
 .contact {
 	&__title {
@@ -19,6 +20,10 @@
 			padding: space.$space-md;
 			border: border.$bw-md solid color.$text;
 			border-radius: border.$br-md;
+
+			@include breakpoint.breakpoint("small") {
+				width: 100%;
+			}
 		}
 		&-legend {
 			margin-inline: auto;
@@ -39,28 +44,13 @@
 
 		&-btn {
 			background-color: color.$main;
+			color: color.$bg;
+
+			width: 150px;
+			height: 50px;
 			padding: space.$space-xs space.$space-md;
 			border: none;
 			border-radius: border.$br-md;
-			color: color.$bg;
-		}
-	}
-
-	// Redes Sociales
-	&__social {
-		text-align: center;
-		&-title {
-			margin-bottom: space.$space-md;
-		}
-		&-networks {
-			display: flex;
-			flex-flow: row nowrap;
-			align-items: center;
-			justify-content: center;
-			gap: space.$space-sm;
-		}
-		&-icon {
-			font-size: typo.$fs-big;
 		}
 	}
 }
