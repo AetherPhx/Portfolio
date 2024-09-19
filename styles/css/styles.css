@@ -287,105 +287,81 @@ button:hover {
 }
 
 .projects__deck {
-  display: grid;
-  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media (min-width: 700px) {
+  .projects__deck {
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
 }
 .projects__card {
   border: 2px solid #0d47a1;
   border-radius: 0.5rem;
   display: grid;
-  gap: 1rem;
-  overflow: hidden;
-}
-@media (min-width: 700px) {
-  .projects__card {
-    grid-template-columns: 1fr auto;
-  }
+  gap: 1.5rem;
 }
 .projects__card-header {
   background-color: #0d47a1;
-  padding-block: 0.75rem;
   color: #e3f2fd;
+  padding-block: 0.75rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
   gap: 0.5rem;
-}
-@media (min-width: 700px) {
-  .projects__card-header {
-    width: 250px;
-  }
 }
 .projects__card-details {
   padding-inline: 1rem;
 }
+.projects__card-header {
+  height: 90px;
+}
 @media (min-width: 700px) {
   .projects__card-details {
-    padding-block: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
 }
 .projects__card-actions {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  gap: 1rem;
 }
 .projects__card-preview img {
   aspect-ratio: 1/1;
   border: 4px solid #0d47a1;
   border-radius: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .exp__deck {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
 }
 .exp__card {
   border: 2px solid #0d47a1;
   border-radius: 0.5rem;
   display: grid;
-  gap: 1rem;
-  overflow: hidden;
-}
-@media (min-width: 700px) {
-  .exp__card {
-    grid-template-columns: 1fr auto;
-  }
+  gap: 1.5rem;
 }
 .exp__card-header {
   background-color: #0d47a1;
-  padding-block: 0.75rem;
   color: #e3f2fd;
+  padding-block: 0.75rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
   gap: 0.5rem;
 }
-@media (min-width: 700px) {
-  .exp__card-header {
-    width: 250px;
-  }
-}
 .exp__card-details {
   padding-inline: 1rem;
-}
-@media (min-width: 700px) {
-  .exp__card-details {
-    padding-block: 1rem;
-  }
-}
-@media (min-width: 700px) {
-  .exp__card-header {
-    padding-block: 0;
-    padding-inline: 1.5rem;
-    place-items: center;
-  }
-}
-@media (min-width: 700px) {
-  .exp__card {
-    grid-template-columns: 1fr auto;
-  }
 }
 
 .skills__deck {
@@ -428,42 +404,27 @@ button:hover {
 
 .formation__deck {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
 }
 .formation__card {
   border: 2px solid #0d47a1;
   border-radius: 0.5rem;
   display: grid;
-  gap: 1rem;
-  overflow: hidden;
-}
-@media (min-width: 700px) {
-  .formation__card {
-    grid-template-columns: 1fr auto;
-  }
+  gap: 1.5rem;
 }
 .formation__card-header {
   background-color: #0d47a1;
-  padding-block: 0.75rem;
   color: #e3f2fd;
+  padding-block: 0.75rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
   gap: 0.5rem;
 }
-@media (min-width: 700px) {
-  .formation__card-header {
-    width: 250px;
-  }
-}
 .formation__card-details {
   padding-inline: 1rem;
-}
-@media (min-width: 700px) {
-  .formation__card-details {
-    padding-block: 1rem;
-  }
 }
 
 .contact__title {

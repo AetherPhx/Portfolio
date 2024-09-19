@@ -1,27 +1,46 @@
 @use "../theme/color-palette" as color;
 @use "../theme/spacing" as space;
+@use "../theme/typography" as typo;
 @use "../theme/borders" as border;
 @use "../util/mixins" as mxn;
 @use "../layout/breakpoints" as breakpoint;
 
 .projects {
 	&__deck {
-		display: grid;
-		gap: space.$space-md;
+		display: flex;
+		flex-direction: column;
+		gap: space.$space-xl;
+
+		@include breakpoint.breakpoint("small") {
+			flex-flow: row wrap;
+			justify-content: space-evenly;
+		}
 	}
 	&__card {
 		@include mxn.card();
+		&-header {
+			height: 90px;
+		}
+
+		&-details {
+			@include breakpoint.breakpoint("small") {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				gap: space.$space-lg;
+			}
+		}
 
 		&-actions {
 			display: flex;
 			flex-direction: row;
-			justify-content: space-evenly;
+			gap: space.$space-md;
 		}
 
 		&-preview img {
 			aspect-ratio: 1 / 1;
 			border: border.$bw-lg solid color.$text;
 			border-radius: border.$br-md;
+			margin-bottom: space.$space-md;
 		}
 	}
 }

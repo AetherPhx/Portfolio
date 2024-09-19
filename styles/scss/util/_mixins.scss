@@ -9,32 +9,22 @@
 	border: border.$bw-md solid color.$text;
 	border-radius: border.$br-md;
 	display: grid;
-	gap: space.$space-md;
-	overflow: hidden;
-	@include breakpoint.breakpoint("small") {
-		grid-template-columns: 1fr auto;
-	}
+	gap: space.$space-lg;
 
 	&-header {
 		background-color: color.$main;
-		padding-block: space.$space-sm;
 		color: color.$bg;
+		padding-block: space.$space-sm;
 
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		align-items: center;
 		text-align: center;
 		gap: space.$space-xs;
-
-		@include breakpoint.breakpoint("small") {
-			width: 250px;
-		}
 	}
 
 	&-details {
 		padding-inline: space.$space-md;
-		@include breakpoint.breakpoint("small") {
-			padding-block: space.$space-md;
-		}
 	}
 }
