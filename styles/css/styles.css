@@ -21,11 +21,8 @@ ul {
   list-style: none;
 }
 
-a,
-a:visited,
-a:active {
+a {
   text-decoration: none;
-  color: inherit;
 }
 
 body {
@@ -179,13 +176,12 @@ button:hover {
 }
 .nav__link {
   font-weight: 700;
-  animation: color 3s ease-in-out;
-}
-.nav__link:visited, .nav__link:active {
   color: #e3f2fd;
+  animation: color 3s ease-in-out;
 }
 .nav__link:hover {
   color: #2196f3;
+  text-decoration: underline;
 }
 
 .main {

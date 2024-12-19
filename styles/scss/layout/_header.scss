@@ -54,15 +54,12 @@
 
 	&__link {
 		font-weight: typo.$fw-bold;
-
-		&:visited,
-		&:active {
-			color: color.$bg;
-		}
-
+		color: color.$bg;
 		animation: color 3s ease-in-out;
+
 		&:hover {
 			color: color.$acc;
+			text-decoration: underline;
 		}
 	}
 }
